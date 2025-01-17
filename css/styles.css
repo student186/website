@@ -19,7 +19,7 @@ body {
 }
 
 .heading {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header a {
@@ -44,14 +44,14 @@ a {
 }
 
 p {
-    background-color: rgba(247, 247, 247, 0.87);
+    background-color: rgba(245, 243, 243, 0.87);
     padding: 25px;
     font-size: 22px;
     width: 100%;
 }
 
 ul {
-    background-color: white;
+    background-color: rgba(245, 243, 243, 0.87);
     padding: 25px;
     font-size: 22px;
     width: 100%;
@@ -63,11 +63,13 @@ ul {
 }
 
 .about h1 {
-    margin-top: 100px;
+    margin-top: 85px;
+    padding-top: 15px;
     font-size: 40px;
     text-align: center;
     color: black;
-    border-bottom: 2px rgb(170, 217, 245) solid;
+    background-color: white;
+    border-bottom: 2px black solid;
 }
 
 .about img {
@@ -76,7 +78,7 @@ ul {
     align-self: center;
     border-radius: 200px;
     margin: 25px;
-    border-color: rgb(170, 217, 245);
+    border-color: black;
 }
 
 .about p {
@@ -92,12 +94,17 @@ ul {
     padding-top: 20px;
     font-size: 40px;
     text-align: center;
-    border-bottom: 2px rgb(228, 226, 226) solid;
+    border-bottom: 2px black solid;
     background-color: white;
 }
 
-.skills .outermost {
+.skills .outermost1 {
     padding-left: 200px;
+    padding-right: 200px;
+}
+
+.skills .outermost2 {
+    padding-left: 0px;
     padding-right: 200px;
 }
 
@@ -107,16 +114,16 @@ ul {
 
 .skills ul li {
     margin-left: 20px;
+    padding-right: 50px;
 }
 
 .skills ul li ul{
     padding-top: 0px;
 }
 
-
 .technology {
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 img {
@@ -126,12 +133,12 @@ img {
     border: 2px black solid;
 }
 .projects h1 {
-    background-color: rgba(240, 240, 240, 0.87);
+    background-color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 8px;
     font-size: 40px;
-    border-bottom: 2px rgb(197, 197, 197) solid;
+    border-bottom: 2px black solid;
 }
 .projects .layout {
     display: grid;
@@ -140,7 +147,7 @@ img {
     gap: 150px;
     justify-content: center;
     padding: 50px 80px 80px 80px;
-    background-color: rgba(240, 240, 240, 0.87);
+    background-color: rgb(202, 234, 252);
 }
 
 .projects .project {
@@ -152,7 +159,7 @@ img {
 
 .projects .description {
     background-color: rgb(123, 162, 221);
-    color: rgba(255, 255, 255, 0.918);
+    color: rgba(245, 243, 243, 0.87);
     border-radius: 12px;
     text-align: center;
     font-size: 25px;
