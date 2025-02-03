@@ -44,14 +44,22 @@ a {
 }
 
 p {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
     background-color: rgba(245, 243, 243, 0.87);
+    border: 2px black solid;
     padding: 25px;
     font-size: 22px;
-    width: 100%;
+    border-radius: 25px;
+   
 }
 
-ul {
+ul.outermost1, ul.outermost2 {
+    margin: 25px;
+    border-radius: 25px;
     background-color: rgba(245, 243, 243, 0.87);
+    border: 2px black solid;
     padding: 25px;
     font-size: 22px;
     width: 100%;
@@ -99,13 +107,13 @@ ul {
 }
 
 .skills .outermost1 {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .skills .outermost2 {
-    padding-left: 0px;
-    padding-right: 200px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .skills_type {
