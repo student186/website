@@ -6,97 +6,37 @@
         <title>My Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-
         <div class="header">
-            <a href="#top">About</a>
-            <a href="#skills_id">Skills</a>
-            <a href="#projects_id">Projects</a>
+            <div class="header-logo"><span>A</span>ndrew</div>
+            <div class="links">
+                <a href="index.html">About</a>
+                <a href="./pages/skills.html">Skills</a>
+                <a href="./pages/projects.html">Projects</a>
+            </div>
         </div>
 
         <div class="about">
-            <h1 class="heading">About</h1>
-            <img src="./img/cartoon.jpg" alt="Picture of Me">
+            <p class="greeting"> Hello! My name is</p>
+            <p class="name"> Andrew</p>
+            <p class="title">Computer Science Student</p>
             <p>I’m Andrew and I’m currently an undergraduate student at SFU studying computer science. Throughout my studies, I’d say I’ve developed a strong interest in making technology that can be used to solve problems. For example, I have collaborated with others in building projects such as mobile apps that help users learn different languages or subjects. Outside of academics, I enjoy playing badminton, swimming and running. Additionally, I also enjoy looking for opportunities to improve my current skills or learn a new skill, whether through online resources for exploring new areas in technology.</p>
+            <!--
+            <div>
+                <p>Hello! My name is <span class="name"><br>Andrew</span><br><span class="title">Computer Science Student</span></p>
+            </div>
+        -->
+            
+        </div>
+
+        <div class="footer">
+            <span>Copyright © Andrew 2025</span>
         </div>
         
-        <div class="skills" id="skills_id">
-            <h1 class="heading">Skills</h1>
-            <div class="skills_list">
-                <ul class="outermost1">
-                    <div class="skills_type">Languages:</div>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Java</li>
-                    <li>Kotlin</li>
-                    <li>Python</li>
-                </ul>
-                <ul class="outermost2">
-                    <div class="skills_type">Technology:</div>
-                    <div class="technology">
-                        <li>Operating Systems:
-                            <ul>
-                                <li>Linux</li>
-                                <li>Windows</li>
-                            </ul> 
-                        </li>
-                        <li> Software & Tools: 
-                            <ul>
-                                <li>Android Studio</li>
-                                <li>Figma</li>
-                                <li>Git</li>
-                                <li>IntelliJ IDEA</li>
-                                <li>Visual Studio Code</li>
-                            </ul>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="projects" id="projects_id">
-            <h1 class="heading">Projects</h1>
-            <div class="layout">
-                <div class="project">
-                    <img src="./img/dsa.png" alt="DSA Explorer">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMRrVUbz5YF238iostjHW20UdXtUl2tZkGEtt3o2XFOeIAFA/viewform?usp=sharing" target="_blank" class="description">
-                        <span>DSA Explorer</span>
-                    </a>
-                </div>
 
-                <div class="project">
-                    <img src="./img/fluentu.png" alt="FluentU">
-                    <a href="https://github.com/dereklwh/FluentU" target="_blank" class="description">
-                        <span>FluentU</span>
-                    </a>
-                </div>
 
-                <div class="project">
-                    <img src="./img/prototype.png" alt="SFU Snap UI Prototype">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMRrVUbz5YF238iostjHW20UdXtUl2tZkGEtt3o2XFOeIAFA/viewform?usp=sharing" target="_blank" class="description">
-                        <span>SFU Snap UI Prototype</span>
-                    </a>
-                </div>
-
-                <div class="project">
-                    <img src="./img/satsmt.png" alt="SAT and SMT Solver">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMRrVUbz5YF238iostjHW20UdXtUl2tZkGEtt3o2XFOeIAFA/viewform?usp=sharing" target="_blank" class="description">
-                        <span>SAT and SMT Solver</span>
-                    </a>
-                </div>
-
-                <div class="project">
-                    <img src="./img/decoder.png" alt="Automatic Ciphertext Decoder">
-                    <a href="https://github.com/student186/ciphertext-decoder" target="_blank" class="description">
-                        <span>Automatic Ciphertext Decoder</span>
-                    </a>
-                </div>
-            </div>
-        </div>
     </body>
 </html>

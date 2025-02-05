@@ -7,35 +7,42 @@
 
 
 body {
-    background-color: rgb(202, 234, 252);
-    font-family: "Poppins", serif;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #1e2733;
+    font-family: "Montserrat", serif;
 }
 
 .header {
     display: flex;
-    position: fixed;
-    width: 100%;
-}
-
-.heading {
+    justify-content: space-between;
+    background-color: #313f53;
+    font-size: 20px;
     font-weight: 500;
+    padding: 25px;
 }
 
-.header a {
-    border-width: 10px;
-    flex-grow: 1;
-    background-image: linear-gradient(to right, rgb(97, 101, 141) , rgb(82, 97, 128));
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
+.header .header-logo {
     color: white;
-    font-weight: 500;
-    font-family: "Poppins", serif;
+    margin-left: 20px;
+}
+
+.header .header-logo span {
+    color: rgb(160, 218, 252);
+    font-weight: bold;
+}
+
+.header .links {
+    display: flex;
+    color: white;
+    font-weight: 300;
+    gap: 25px;
 }
 
 .header a:hover {
-    background-image: linear-gradient(to right, rgb(76, 80, 133) , rgb(59, 81, 124));
+    font-weight: 500;
 }
 
 a {
@@ -43,55 +50,57 @@ a {
     color: rgb(255, 252, 252);
 }
 
-p {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    background-color: rgba(245, 243, 243, 0.87);
-    border: 2px black solid;
+.about {
+    padding: 0 200px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about .name {
+    color: rgb(160, 218, 252);
+    padding-top: 25px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.about .title {
+    color: rgb(169, 201, 219);
+    font-size: 55px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.footer {
+    background-color: #313f53;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
     padding: 25px;
-    font-size: 22px;
-    border-radius: 25px;
-   
+    margin-top: 25px;
 }
 
 ul.outermost1, ul.outermost2 {
     margin: 25px;
     border-radius: 25px;
-    background-color: rgba(245, 243, 243, 0.87);
-    border: 2px black solid;
+    background-color: #313f53;
+    color: white;
     padding: 25px;
-    font-size: 22px;
-    width: 100%;
+    font-size: 25px;
+    width: 50%;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-}
-
-.about h1 {
-    margin-top: 85px;
-    padding-top: 15px;
-    font-size: 40px;
-    text-align: center;
-    color: black;
-    background-color: white;
-    border-bottom: 2px black solid;
-}
-
-.about img {
-    height: 300px;
-    width: 300px;
-    align-self: center;
-    border-radius: 200px;
-    margin: 25px;
-    border-color: black;
-}
-
-.about p {
-    padding-left: 200px;
-    padding-right: 200px;
+ul.outermost3 {
+    margin: 25px auto;
+    border-radius: 25px;
+    width: 50%;
+    background-color: #313f53;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
 }
 
 .skills_list {
@@ -100,10 +109,11 @@ ul.outermost1, ul.outermost2 {
 
 .skills h1 {
     padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 40px;
     text-align: center;
-    border-bottom: 2px black solid;
-    background-color: white;
+    border-bottom: 7px #313f53 solid;
+    color: rgb(160, 218, 252);
 }
 
 .skills .outermost1 {
@@ -116,11 +126,19 @@ ul.outermost1, ul.outermost2 {
     padding-right: 75px;
 }
 
+.skills .outermost3 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
 .skills_type {
-    border-bottom: black solid 1px;
+    color: rgb(169, 201, 219);
+    font-weight: 500;
+    border-bottom: rgb(169, 201, 219) solid 2px;
 }
 
 .skills ul li {
+    font-weight: 300;
     margin-left: 20px;
     padding-right: 50px;
 }
@@ -138,15 +156,14 @@ img {
     height: 500px;
     width: auto;
     border-radius: 15px;
-    border: 2px black solid;
 }
 .projects h1 {
-    background-color: white;
+    color: rgb(160, 218, 252);
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     font-size: 40px;
-    border-bottom: 2px black solid;
+    border-bottom: 7px #313f53 solid;
 }
 .projects .layout {
     display: grid;
@@ -155,13 +172,11 @@ img {
     gap: 150px;
     justify-content: center;
     padding: 50px 80px 80px 80px;
-    background-color: rgb(202, 234, 252);
 }
 
 .projects .project {
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 15px;
 }
 
@@ -206,4 +221,3 @@ img {
     opacity: 1;
     right: 0;
 }
-
