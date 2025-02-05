@@ -108,11 +108,11 @@ ul.outermost3 {
 }
 
 .skills h1 {
+    background-color: #55657e;
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 40px;
     text-align: center;
-    border-bottom: 7px #313f53 solid;
     color: rgb(160, 218, 252);
 }
 
@@ -159,11 +159,11 @@ img {
 }
 .projects h1 {
     color: rgb(160, 218, 252);
+    background-color: #55657e;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 40px;
-    border-bottom: 7px #313f53 solid;
 }
 .projects .layout {
     display: grid;
