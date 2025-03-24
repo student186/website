@@ -1,0 +1,229 @@
+/* this removes bullet points */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #1e2733;
+    font-family: "Montserrat", serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #313f53;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px;
+}
+
+.header .header-logo {
+    color: white;
+    margin-left: 20px;
+}
+
+.header .header-logo span {
+    color: rgb(160, 218, 252);
+    font-weight: bold;
+}
+
+.header .links {
+    display: flex;
+    color: white;
+    font-weight: 300;
+    gap: 25px;
+}
+
+.header a:hover {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+}
+
+.about {
+    padding: 0 200px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about .name {
+    color: rgb(160, 218, 252);
+    padding-top: 25px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.about .title {
+    color: rgb(169, 201, 219);
+    font-size: 55px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.footer {
+    background-color: #313f53;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+ul.outermost1, ul.outermost2 {
+    margin: 25px;
+    border-radius: 25px;
+    background-color: #313f53;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+    width: 50%;
+}
+
+ul.outermost3 {
+    margin: 25px auto;
+    border-radius: 25px;
+    width: 50%;
+    background-color: #313f53;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.skills_list {
+    display: flex;
+}
+
+.skills h1 {
+    background-color: #313f53;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(160, 218, 252);
+    font-weight: 600;
+    border-top: rgba(67, 145, 187, 0.26) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.123) solid 4px;
+}
+
+.skills .outermost1 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.skills .outermost2 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.skills .outermost3 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.skills_type {
+    color: rgb(169, 201, 219);
+    font-weight: 500;
+    border-bottom: rgb(169, 201, 219) solid 2px;
+}
+
+.skills ul li {
+    font-weight: 300;
+    margin-left: 20px;
+    padding-right: 50px;
+}
+
+.skills ul li ul{
+    padding-top: 0px;
+}
+
+.technology {
+    display: flex;
+    gap: 50px;
+}
+
+img {
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+}
+.projects h1 {
+    color: rgb(160, 218, 252);
+    background-color: #313f53;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    border-top: rgba(67, 145, 187, 0.26) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.123) solid 4px;
+}
+.projects .layout {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 150px;
+    justify-content: center;
+    padding: 50px 80px 80px 80px;
+}
+
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.projects .description {
+    background-color: rgb(123, 162, 221);
+    color: rgba(245, 243, 243, 0.87);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.projects .description span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.projects .description span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.projects .description:hover{
+    background-color: rgb(99, 148, 223);
+}
+
+.projects .description:hover span {
+    padding-right: 25px;
+}
+
+.projects .description:hover span:after {
+    opacity: 1;
+    right: 0;
+}
